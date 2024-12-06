@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="html_coban.js"></script>
+</head>
+<body>
+    <select id="car">
+        <option value="mecs"> mecs</option>
+        <option value="audi"> audi</option>
+        <option value="vinfast"> vinfast</option>
+    </select>
+</body>
+</html>
+<script>
+    var selectElement = document.getElementById("car");
+    selectElement.addEventListener("change", changeFunction);
+    function changeFunction(){
+        var selectedValue = document.getElementById("car").value;
+        alert(selectedValue);
+    }
+</script>
