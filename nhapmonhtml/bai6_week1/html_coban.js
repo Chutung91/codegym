@@ -1,2 +1,2 @@
-var intro = "hel world";
+let intro = "hel world";
 document.getElementById("intro").innerHTML=intro;
