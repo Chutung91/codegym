@@ -1,7 +1,9 @@
-let i = null;
+let i = 0;
 
 do {
-    i = +prompt("nhap vao 1 so:")
-} while ((i < 0) || (i > 10));
+    i++;
+    if (i == 3) {continue;}
+    document.write('hello' + "<br>");
+    console.log(i);
 
-alert("so ban vua nhap la: " + i);
+} while (i<5)
