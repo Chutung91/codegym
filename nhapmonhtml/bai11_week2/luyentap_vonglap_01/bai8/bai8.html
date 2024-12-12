@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai8</title>
+</head>
+<body>
+    <input type="button" onclick="choi()" value="Chơi">
+    <script>
+        function choi() {
+          let x = +prompt('khoảng bạn muốn đoán từ 0 đến ');
+          let y = Math.floor(Math.random() * x);
+          let dem = 1;
+          while (dem <=3) {
+              let z = +prompt("Nhập số bạn muốn đoán");
+              if (z == y) {
+                alert('Chúc mừng');
+                break;
+              } else dem++;
+          }
+          if (dem == 4) {alert('Bạn đã hết lượt chơi');}
+        }
+    </script>
+</body>
+</html>
