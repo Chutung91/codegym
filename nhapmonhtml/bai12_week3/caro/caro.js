@@ -25,7 +25,7 @@ function changeValue() {
     while (giatri != '0' && giatri != 'x') {
         giatri = prompt('nhap gia tri');
     }
-    a[dong][cot] = giatri;
+    a[dong-1][cot-1] = giatri;
     let hienthi = '';
     for (let i = 0; i < n; i++) {
         for (let j = 0; j < m; j++) {
