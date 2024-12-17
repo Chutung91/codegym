@@ -1,5 +1,18 @@
-var array = ['item1', 'item2', 'item3'];
-for (let i = 0; i < array.length; i++) {
-    console.log('index = ' + i + '__value = ' + array[i]);
+const matrix = new Array(3);
+let m = 0
+for (let i = 0; i < matrix.length; i++) {
+    matrix[i] = new Array(3);
+
+    for (let j = 0; j < matrix[i].length; j++) {
+        matrix[i][j] = j+m+1;
+    }
+    m = m + 3;
 }
-console.log(array);
+console.log(matrix);
+let tong = 0;
+for (let i = 0; i < matrix.length; i++) {
+    for (let j = 0; j < matrix[i].length; j++) {
+        tong += matrix[i][j];
+    }
+}
+console.log(tong);
