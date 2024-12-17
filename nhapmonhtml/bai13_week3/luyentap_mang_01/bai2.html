@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai2</title>
+</head>
+<body>
+    <script>
+      let a = [1, 13, 89, 100, 23, 213, 12, 57, 23, 48, 35];
+      let max = a[0];
+      let vt = 0;
+      for (let i = 1; i < a.length; i++) {
+        if (a[i] > max) {
+          max = a[i];
+          vt = i;
+        }
+      }
+      console.log(max, vt);
+    </script>
+</body>
+</html>

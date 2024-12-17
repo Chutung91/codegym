@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai3</title>
+</head>
+<body>
+    <script>
+      let n = 10;
+      let a = [];
+      let max = 0;
+      let tong = 0;
+      for (let i = 0; i < n; i++) {
+        a[i] = Math.floor(Math.random() * 20);
+        if (a[i] > max ) {max = a[i];}
+        tong = tong + a[i];
+      }
+      console.log(max);
+      console.log(tong/10);
+    </script>
+</body>
+</html>
