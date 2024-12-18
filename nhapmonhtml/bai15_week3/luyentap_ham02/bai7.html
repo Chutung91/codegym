@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai7</title>
+</head>
+<body>
+    <script>
+        function doiCho(x,y) {
+            let tg = x;
+            x = y;
+            y = tg;
+            alert('a la ' + x + ', b la ' + y);
+        }
+        let a = +prompt('nhap vao a');
+        let b = +prompt('nhap vao b');
+        doiCho(a,b);
+    </script>
+</body>
+</html>

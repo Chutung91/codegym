@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai9</title>
+</head>
+<body>
+<script>
+    function ktr(x) {
+        if (arr.includes(x)) {
+            let dem = 0;
+            for (let i = 0; i < arr.length; i++) {
+                if (arr[i] == x) {
+                    dem++;
+                }
+            }
+            return alert(dem);
+        }
+        return alert(-1);
+    }
+
+    let n = 10;
+    let arr = [];
+    for (let i = 0; i < n; i++) {
+        let a = prompt('nhap vao 1 ky tu');
+        arr.push(a);
+    }
+    let b = prompt('ky tu can kiem tra');
+    ktr(b);
+</script>
+</body>
+</html>
