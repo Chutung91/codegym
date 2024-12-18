@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai5</title>
+</head>
+<body>
+    <script>
+        function ktr(x) {
+            return arr1.indexOf(x);
+        }
+        function goi(x) {
+            x == -1 ? alert('khong tim thay chom sao nao!') : alert('chom sao ' + arr2[x]);
+        }
+        let arr1 = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+        let arr2 = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+        let star = prompt('nhap ten 1 ngoi sao');
+        goi(ktr(star));
+    </script>
+</body>
+</html>
