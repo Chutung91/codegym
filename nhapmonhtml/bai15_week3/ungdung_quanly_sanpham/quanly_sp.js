@@ -8,7 +8,7 @@ function inRa() {
     for (let i = 0; i < n; i++) {
         hienThi = hienThi + '<tr>';
         hienThi = hienThi + '<td>'+ arrProduct[i] +'</td>';
-        hienThi = hienThi + '<td>'+ '<input type="submit" value="Edit" onclick="Edit()">' +'</td>';
+        hienThi = hienThi + '<td>'+ '<input type="submit" value="Edit" onclick="Edit(' + i + ')">' +'</td>';
         hienThi = hienThi + '<td>'+ '<input type="submit" value="Delete" onclick="Delete()">' +'</td>';
         hienThi = hienThi + '</tr>';
     }
